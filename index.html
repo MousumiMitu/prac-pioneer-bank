@@ -84,7 +84,8 @@
         withdrawBtn.addEventListener("click", function(){
             const withdrawNumber = getInputNumber("withdraw-amount");
 
-            updateSpanText("current-withdraw",withdrawNumber );
+            updateSpanText("current-withdraw",withdrawNumber);
+            updateSpanText("current_balance", -1 *withdrawNumber)
 
             document.getElementById("withdraw-amount").value = "";
         })
